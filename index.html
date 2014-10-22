@@ -18,6 +18,9 @@
                 //url: "http://localhost:8080/phgap/pape/php/estado.php",
                 data: "inputdata=",
                 dataType:'jsonp',
+                error:function(XMLHttpRequest, textStatus, errorThrown){
+                  $("#btn").html('Verifica tu conexción a internet');
+                },
                 success:function(response){
                   $("#btn").html(response.e);
                 }
@@ -38,10 +41,19 @@
                 <h1 align="center">Estamos abriertos</h1>
 
                <button type="button" id="btn" class="ui-btn-a"></button>
-
-            <a href="tel:6623248965" class="posicionBoton">
-              <img src='CSS/BOTON/call.png'>
-            </a>
+            <div class="posicionBoton">
+              <a href="tel:6623248965">
+                <img src='CSS/BOTON/call.png'>
+              </a>
+            </div>
+            <div class="posicionBotonR">
+              <a href="http://www.papeleriarosita.com/vb">
+                <h3>Papeleriarosita.com</h3>
+              </a>
+              <a href="mailto:vb@papeleriarosita.com" target="_top">
+                vb@papeleriarosita.com
+              </a>
+            </div>
         </div>
     	<!--
         <div data-role="page" id="page2">

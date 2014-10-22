@@ -18,16 +18,21 @@
 		text-indent: -99999px;
 		
 }
-.miBoton:hover {
-	background-position: 0 0;
-}
-.posicionBoton{
+	.miBoton:hover {
+		background-position: 0 0;
+	}
+	.posicionBotonR{
+		margin:auto;
+		bottom:0px;
+	 	right:0px;
+		position:absolute
+	}
+	.posicionBoton{
 		margin:auto;
 		bottom:0px;
 		left:0px;
 		position:absolute
 	}
-	
 				
 
 
